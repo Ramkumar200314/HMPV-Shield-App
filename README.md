@@ -40,13 +40,6 @@
 
 ---
 
-## 📄 Project Documents
-
-- 📘 [Project Report](Project_Report.pdf)
-- 🎞️ [Project Presentation](Project_Presentation.pptx)
-
----
-
 ## 🚀 Technologies Used
 
 - **Flutter** & **Dart**
@@ -67,7 +60,7 @@
 ## 📬 Contact
 
 **Developer:** Ram Kumar  
-📧 Email: [your-email@example.com]  
+📧 Email: ramkumar20034@gmail.com 
 📍 Location: Arikarevula, East Godavari
 
 ---
