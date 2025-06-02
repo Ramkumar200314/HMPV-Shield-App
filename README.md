@@ -53,7 +53,7 @@
 ## 🙌 Acknowledgements
 
 - Developed as part of MCA Final Year Project  
-- Special thanks to faculty and mentors at *[Your College Name]*
+- Special thanks to faculty and mentors at *Aditya College Of Engineering And Technology*
 
 ---
 
