@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">903374296317</string>
+    <string name="google_api_key" translatable="false">AIzaSyALwqqTavy2R937AV8rCRo6bKj7UBc6mjc</string>
+    <string name="google_app_id" translatable="false">1:903374296317:android:a04a07a909cf3bf6b5da94</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyALwqqTavy2R937AV8rCRo6bKj7UBc6mjc</string>
+    <string name="google_storage_bucket" translatable="false">hmpv-shield-app.firebasestorage.app</string>
+    <string name="project_id" translatable="false">hmpv-shield-app</string>
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>

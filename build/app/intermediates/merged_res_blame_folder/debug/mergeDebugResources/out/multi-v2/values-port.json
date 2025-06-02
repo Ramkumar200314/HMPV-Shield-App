@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.hmpv_virus_shield.app-mergeDebugResources-49:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\KUMAR\\.gradle\\caches\\transforms-3\\a358fbb4f9efe8638854fe6bfa3c6a54\\transformed\\appcompat-1.1.0\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,368 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.hmpv_virus_shield"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:5:5-67
+15-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:5:22-64
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:6:5-79
+16-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:6:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:7:5-81
+17-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:7:22-78
+18    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" /> <!-- Queries to check apps that can process text -->
+18-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:8:5-77
+18-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:8:22-74
+19    <queries>
+19-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:54:5-64:15
+20        <intent>
+20-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:55:9-58:18
+21            <action android:name="android.intent.action.PROCESS_TEXT" />
+21-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:56:13-72
+21-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:56:21-70
+22
+23            <data android:mimeType="text/plain" />
+23-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:57:13-50
+23-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:57:19-48
+24        </intent>
+25        <intent>
+25-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:59:9-63:18
+26            <action android:name="android.intent.action.VIEW" />
+26-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:60:13-64
+26-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:60:21-62
+27
+28            <category android:name="android.intent.category.BROWSABLE" />
+28-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:61:13-73
+28-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:61:23-71
+29
+30            <data android:scheme="https" />
+30-->D:\HMPV\hmpv_virus_shield\android\app\src\main\AndroidManifest.xml:57:13-50
+31        </intent>
+32        <!-- Needs to be explicitly declared on Android R+ -->
+33        <package android:name="com.google.android.apps.maps" />
+33-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f5ef50920f48f5eba1e63bdc79705670\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+33-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f5ef50920f48f5eba1e63bdc79705670\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
+34    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+35    <!-- <uses-sdk android:minSdkVersion="21" /> -->
+36    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+36-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\KUMAR\.gradle\caches\transforms-3\edc7b8f14f2df91a4e982e87633018a7\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:10:5-79
+36-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\KUMAR\.gradle\caches\transforms-3\edc7b8f14f2df91a4e982e87633018a7\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:10:22-76
+37    <uses-permission android:name="android.permission.WAKE_LOCK" />
+37-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:24:5-68
+37-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:24:22-65
+38    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+38-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:25:5-79
+38-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:25:22-76
+39    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+39-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:26:5-88
+39-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:26:22-85
+40    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+40-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:27:5-82
+40-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:27:22-79
+41
+42    <uses-feature
+42-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f5ef50920f48f5eba1e63bdc79705670\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+43        android:glEsVersion="0x00020000"
+43-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f5ef50920f48f5eba1e63bdc79705670\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+44        android:required="true" />
+44-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f5ef50920f48f5eba1e63bdc79705670\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+45
+46    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+46-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:26:5-110
+46-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:26:22-107
+47
+48    <permission
+48-->[androidx.core:core:1.13.1] C:\Users\KUMAR\.gradle\caches\transforms-3\4653036547623fb56ff2c0302f4416e8\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+49        android:name="com.example.hmpv_virus_shield.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+49-->[androidx.core:core:1.13.1] C:\Users\KUMAR\.gradle\caches\transforms-3\4653036547623fb56ff2c0302f4416e8\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+50        android:protectionLevel="signature" />
+50-->[androidx.core:core:1.13.1] C:\Users\KUMAR\.gradle\caches\transforms-3\4653036547623fb56ff2c0302f4416e8\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+51
+52    <uses-permission android:name="com.example.hmpv_virus_shield.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+52-->[androidx.core:core:1.13.1] C:\Users\KUMAR\.gradle\caches\transforms-3\4653036547623fb56ff2c0302f4416e8\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+52-->[androidx.core:core:1.13.1] C:\Users\KUMAR\.gradle\caches\transforms-3\4653036547623fb56ff2c0302f4416e8\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+53
+54    <application
+55        android:name="android.app.Application"
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.13.1] C:\Users\KUMAR\.gradle\caches\transforms-3\4653036547623fb56ff2c0302f4416e8\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+57        android:debuggable="true"
+58        android:extractNativeLibs="true"
+59        android:hardwareAccelerated="true"
+60        android:icon="@mipmap/ic_launcher"
+61        android:label="HMPV Shield"
+62        android:usesCleartextTraffic="true" >
+63
+64        <!-- Google Maps API Key -->
+65        <meta-data
+66            android:name="com.google.android.geo.API_KEY"
+67            android:value="AIzaSyAP6MqmsFmPYb1Yfw96KrncxfyYQCd-FvU" />
+68        <meta-data
+69            android:name="flutter.embedding.android.EnableNonUiThreadRasterizer"
+70            android:value="true" />
+71
+72        <activity
+73            android:name="com.example.hmpv_virus_shield.MainActivity"
+74            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+75            android:exported="true"
+76            android:hardwareAccelerated="true"
+77            android:launchMode="singleTop"
+78            android:taskAffinity=""
+79            android:theme="@style/LaunchTheme"
+80            android:windowSoftInputMode="adjustResize" >
+81            <meta-data
+82                android:name="io.flutter.embedding.android.NormalTheme"
+83                android:resource="@style/NormalTheme" />
+84
+85            <intent-filter>
+86                <action android:name="android.intent.action.MAIN" />
+87
+88                <category android:name="android.intent.category.LAUNCHER" />
+89            </intent-filter>
+90        </activity>
+91
+92        <!-- Flutter Plugin Metadata -->
+93        <meta-data
+94            android:name="flutterEmbedding"
+95            android:value="2" />
+96
+97        <service
+97-->[:cloud_firestore] D:\HMPV\hmpv_virus_shield\build\cloud_firestore\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-12:19
+98            android:name="com.google.firebase.components.ComponentDiscoveryService"
+98-->[:cloud_firestore] D:\HMPV\hmpv_virus_shield\build\cloud_firestore\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:18-89
+99            android:directBootAware="true"
+99-->[com.google.firebase:firebase-common:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f197123c16a8b08a988cc06de07a1810\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+100            android:exported="false" >
+100-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\KUMAR\.gradle\caches\transforms-3\edc7b8f14f2df91a4e982e87633018a7\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:16:13-37
+101            <meta-data
+101-->[:cloud_firestore] D:\HMPV\hmpv_virus_shield\build\cloud_firestore\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-11:85
+102                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+102-->[:cloud_firestore] D:\HMPV\hmpv_virus_shield\build\cloud_firestore\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:17-134
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[:cloud_firestore] D:\HMPV\hmpv_virus_shield\build\cloud_firestore\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:17-82
+104            <meta-data
+104-->[:firebase_core] D:\HMPV\hmpv_virus_shield\build\firebase_core\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-11:85
+105                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+105-->[:firebase_core] D:\HMPV\hmpv_virus_shield\build\firebase_core\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:17-124
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[:firebase_core] D:\HMPV\hmpv_virus_shield\build\firebase_core\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\KUMAR\.gradle\caches\transforms-3\edc7b8f14f2df91a4e982e87633018a7\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:17:13-19:85
+108                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+108-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\KUMAR\.gradle\caches\transforms-3\edc7b8f14f2df91a4e982e87633018a7\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:18:17-122
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\KUMAR\.gradle\caches\transforms-3\edc7b8f14f2df91a4e982e87633018a7\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:19:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\KUMAR\.gradle\caches\transforms-3\edc7b8f14f2df91a4e982e87633018a7\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:20:13-22:85
+111                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+111-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\KUMAR\.gradle\caches\transforms-3\edc7b8f14f2df91a4e982e87633018a7\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:21:17-111
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\KUMAR\.gradle\caches\transforms-3\edc7b8f14f2df91a4e982e87633018a7\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:22:17-82
+113            <meta-data
+113-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:33:13-35:85
+114                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+114-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:34:17-139
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\e03a42aea0e47fe19a71813a0dea9b9b\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:35:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\5031adf837ce335b3d880470f2b96cf1\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+117                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+117-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\5031adf837ce335b3d880470f2b96cf1\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\5031adf837ce335b3d880470f2b96cf1\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\5031adf837ce335b3d880470f2b96cf1\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+120                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+120-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\5031adf837ce335b3d880470f2b96cf1\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\5031adf837ce335b3d880470f2b96cf1\transformed\jetified-firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\8704e082cebfcd2885c74326904d5d60\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+123                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+123-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\8704e082cebfcd2885c74326904d5d60\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\8704e082cebfcd2885c74326904d5d60\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-common:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f197123c16a8b08a988cc06de07a1810\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+126                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+126-->[com.google.firebase:firebase-common:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f197123c16a8b08a988cc06de07a1810\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-common:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f197123c16a8b08a988cc06de07a1810\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+128        </service>
+129        <service
+129-->[:geolocator_android] D:\HMPV\hmpv_virus_shield\build\geolocator_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-12:56
+130            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+130-->[:geolocator_android] D:\HMPV\hmpv_virus_shield\build\geolocator_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-77
+131            android:enabled="true"
+131-->[:geolocator_android] D:\HMPV\hmpv_virus_shield\build\geolocator_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-35
+132            android:exported="false"
+132-->[:geolocator_android] D:\HMPV\hmpv_virus_shield\build\geolocator_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-37
+133            android:foregroundServiceType="location" />
+133-->[:geolocator_android] D:\HMPV\hmpv_virus_shield\build\geolocator_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-53
+134
+135        <activity
+135-->[:url_launcher_android] D:\HMPV\hmpv_virus_shield\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-11:74
+136            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+136-->[:url_launcher_android] D:\HMPV\hmpv_virus_shield\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-74
+137            android:exported="false"
+137-->[:url_launcher_android] D:\HMPV\hmpv_virus_shield\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-37
+138            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+138-->[:url_launcher_android] D:\HMPV\hmpv_virus_shield\build\url_launcher_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-71
+139
+140        <provider
+140-->[com.google.firebase:firebase-common:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f197123c16a8b08a988cc06de07a1810\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+141            android:name="com.google.firebase.provider.FirebaseInitProvider"
+141-->[com.google.firebase:firebase-common:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f197123c16a8b08a988cc06de07a1810\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+142            android:authorities="com.example.hmpv_virus_shield.firebaseinitprovider"
+142-->[com.google.firebase:firebase-common:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f197123c16a8b08a988cc06de07a1810\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+143            android:directBootAware="true"
+143-->[com.google.firebase:firebase-common:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f197123c16a8b08a988cc06de07a1810\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+144            android:exported="false"
+144-->[com.google.firebase:firebase-common:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f197123c16a8b08a988cc06de07a1810\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+145            android:initOrder="100" />
+145-->[com.google.firebase:firebase-common:21.0.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f197123c16a8b08a988cc06de07a1810\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+146
+147        <uses-library
+147-->[androidx.window:window:1.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\04ef585d91c180d3a2959a97b64d50a0\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+148            android:name="androidx.window.extensions"
+148-->[androidx.window:window:1.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\04ef585d91c180d3a2959a97b64d50a0\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+149            android:required="false" />
+149-->[androidx.window:window:1.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\04ef585d91c180d3a2959a97b64d50a0\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+150        <uses-library
+150-->[androidx.window:window:1.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\04ef585d91c180d3a2959a97b64d50a0\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+151            android:name="androidx.window.sidecar"
+151-->[androidx.window:window:1.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\04ef585d91c180d3a2959a97b64d50a0\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+152            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+152-->[androidx.window:window:1.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\04ef585d91c180d3a2959a97b64d50a0\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+153        <uses-library
+153-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f5ef50920f48f5eba1e63bdc79705670\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+154            android:name="org.apache.http.legacy"
+154-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f5ef50920f48f5eba1e63bdc79705670\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+155            android:required="false" />
+155-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f5ef50920f48f5eba1e63bdc79705670\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+156
+157        <receiver
+157-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:29:9-33:20
+158            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+158-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:30:13-85
+159            android:enabled="true"
+159-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:31:13-35
+160            android:exported="false" >
+160-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:32:13-37
+161        </receiver>
+162
+163        <service
+163-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:35:9-38:40
+164            android:name="com.google.android.gms.measurement.AppMeasurementService"
+164-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:36:13-84
+165            android:enabled="true"
+165-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:37:13-35
+166            android:exported="false" />
+166-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:38:13-37
+167        <service
+167-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:39:9-43:72
+168            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+168-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:40:13-87
+169            android:enabled="true"
+169-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:41:13-35
+170            android:exported="false"
+170-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:42:13-37
+171            android:permission="android.permission.BIND_JOB_SERVICE" />
+171-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\KUMAR\.gradle\caches\transforms-3\f042a53d55334c5a7bfa2c91f1ea5a2e\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:43:13-69
+172
+173        <activity
+173-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\KUMAR\.gradle\caches\transforms-3\5098352e70c1b753e45e2e16f81a7614\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+174            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+174-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\KUMAR\.gradle\caches\transforms-3\5098352e70c1b753e45e2e16f81a7614\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\KUMAR\.gradle\caches\transforms-3\5098352e70c1b753e45e2e16f81a7614\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\KUMAR\.gradle\caches\transforms-3\5098352e70c1b753e45e2e16f81a7614\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+177
+178        <provider
+178-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\KUMAR\.gradle\caches\transforms-3\95e3f93e9093142e36c4dea3f2b5105f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+179            android:name="androidx.startup.InitializationProvider"
+179-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\KUMAR\.gradle\caches\transforms-3\95e3f93e9093142e36c4dea3f2b5105f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+180            android:authorities="com.example.hmpv_virus_shield.androidx-startup"
+180-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\KUMAR\.gradle\caches\transforms-3\95e3f93e9093142e36c4dea3f2b5105f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+181            android:exported="false" >
+181-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\KUMAR\.gradle\caches\transforms-3\95e3f93e9093142e36c4dea3f2b5105f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+182            <meta-data
+182-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\KUMAR\.gradle\caches\transforms-3\95e3f93e9093142e36c4dea3f2b5105f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+183                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+183-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\KUMAR\.gradle\caches\transforms-3\95e3f93e9093142e36c4dea3f2b5105f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+184                android:value="androidx.startup" />
+184-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\KUMAR\.gradle\caches\transforms-3\95e3f93e9093142e36c4dea3f2b5105f\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+185            <meta-data
+185-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+186                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+186-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+187                android:value="androidx.startup" />
+187-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+188        </provider>
+189
+190        <uses-library
+190-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\KUMAR\.gradle\caches\transforms-3\788041b74d35d1cad17b1096ea8a2fb4\transformed\jetified-ads-adservices-1.1.0-beta11\AndroidManifest.xml:23:9-25:40
+191            android:name="android.ext.adservices"
+191-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\KUMAR\.gradle\caches\transforms-3\788041b74d35d1cad17b1096ea8a2fb4\transformed\jetified-ads-adservices-1.1.0-beta11\AndroidManifest.xml:24:13-50
+192            android:required="false" />
+192-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\KUMAR\.gradle\caches\transforms-3\788041b74d35d1cad17b1096ea8a2fb4\transformed\jetified-ads-adservices-1.1.0-beta11\AndroidManifest.xml:25:13-37
+193
+194        <meta-data
+194-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\KUMAR\.gradle\caches\transforms-3\89ac06e527cb8407db4c8042cdfd795f\transformed\jetified-play-services-basement-18.5.0\AndroidManifest.xml:21:9-23:69
+195            android:name="com.google.android.gms.version"
+195-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\KUMAR\.gradle\caches\transforms-3\89ac06e527cb8407db4c8042cdfd795f\transformed\jetified-play-services-basement-18.5.0\AndroidManifest.xml:22:13-58
+196            android:value="@integer/google_play_services_version" />
+196-->[com.google.android.gms:play-services-basement:18.5.0] C:\Users\KUMAR\.gradle\caches\transforms-3\89ac06e527cb8407db4c8042cdfd795f\transformed\jetified-play-services-basement-18.5.0\AndroidManifest.xml:23:13-66
+197
+198        <receiver
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+199            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+200            android:directBootAware="false"
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+201            android:enabled="true"
+201-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+202            android:exported="true"
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+203            android:permission="android.permission.DUMP" >
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+204            <intent-filter>
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+205                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+206            </intent-filter>
+207            <intent-filter>
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+208                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+209            </intent-filter>
+210            <intent-filter>
+210-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+211                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+212            </intent-filter>
+213            <intent-filter>
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+214                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\KUMAR\.gradle\caches\transforms-3\0558adaec8eac51a19b8f479d5de776b\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+215            </intent-filter>
+216        </receiver>
+217    </application>
+218
+219</manifest>

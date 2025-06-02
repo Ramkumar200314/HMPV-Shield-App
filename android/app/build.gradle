@@ -1,0 +1,45 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services"  // Firebase services
+}
+
+android {
+    namespace = "com.example.hmpv_virus_shield"
+    compileSdk = 35
+    ndkVersion = "25.1.8937393"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    defaultConfig {
+        applicationId = "com.example.hmpv_virus_shield"
+        minSdkVersion 21  // Use a fixed value instead of flutter.minSdkVersion
+        targetSdkVersion 35  // Use a fixed value
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source "../.."
+}
+
+dependencies {
+    implementation platform("com.google.firebase:firebase-bom:33.11.0")
+    implementation "com.google.firebase:firebase-analytics"
+    implementation 'com.google.gms:google-services:4.4.2'
+}
